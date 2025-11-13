@@ -1,0 +1,114 @@
+/* Tema automático claro/escuro */
+:root {
+  --bg-light: #F8FAFC;
+  --text-light: #0F172A;
+  --bg-dark: #0F172A;
+  --text-dark: #F8FAFC;
+  --primary: #3B82F6;
+  --muted: #64748B;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+}
+
+/* Layout base */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+header.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 1.5rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 500;
+  color: var(--primary);
+  margin-top: 0.2rem;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.contact li {
+  margin-bottom: 0.3rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.job h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.job span {
+  color: var(--muted);
+  font-weight: normal;
+}
+
+.job ul {
+  margin: 0 0 1rem 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--muted);
+  font-size: 0.9rem;
+  color: var(--muted);
+}

@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitor Costa</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f4f4f4;
-        }
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 4px solid #333;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            object-fit: cover;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 24px;
-            color: #333;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            img {
-                width: 120px;
-                height: 120px;
-            }
-            .social-icons a {
-                font-size: 20px;
-            }
-            body {
-                margin: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.5em;
-            }
-            .btn {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo e portfólio profissional de Vitor Costa — Staff iOS Engineer.">
+  <title>Vitor Costa | iOS Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Vitor Costa</h1>
-    <img src="perfil.jpg" alt="Vitor Costa">
-    <p>Staff iOS Engineer</p>
-    <p>iOS Tech Leader</p>
-    <p>Software Engineer Manager</p>
-
-    <div class="social-icons">
-        <a href="https://github.com/vitorcostacc" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/vitorcostacc" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <header class="container header">
+    <img src="https://via.placeholder.com/160" alt="Foto de perfil" class="profile-pic">
+    <div>
+      <h1>Vitor Costa</h1>
+      <p class="subtitle">Staff iOS Engineer</p>
+      <ul class="contact">
+        <li>📍 Aracaju, Sergipe – Brasil</li>
+        <li>📧 <a href="mailto:me@vitorcosta.cc">me@vitorcosta.cc</a></li>
+        <li>💻 <a href="https://vitorcosta.cc" target="_blank">vitorcosta.cc</a></li>
+        <li>🔗 <a href="#">LinkedIn</a> | <a href="#">GitHub</a></li>
+      </ul>
     </div>
+  </header>
 
-    <p><a href="resume.pdf" download class="btn">Baixar Currículo</a></p>
+  <main class="container">
+    <section>
+      <h2>Resumo</h2>
+      <p>
+        Staff iOS Engineer com mais de 15 anos de experiência entregando aplicativos móveis escaláveis e de alto impacto no setor financeiro. 
+        Especialista em Swift, arquiteturas iOS, CI/CD e liderança técnica. Experiência comprovada em mentoria, excelência em engenharia e 
+        entrega de soluções utilizadas por milhões de usuários.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experiência Profissional</h2>
+
+      <div class="job">
+        <h3>PicPay – Staff iOS Engineer <span>| Jun 2025 – Presente</span></h3>
+        <ul>
+          <li>Liderança de arquitetura e pipelines CI/CD para desenvolvimento e releases eficientes.</li>
+          <li>Mentoria de múltiplos squads, implementando soluções iOS escaláveis.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Luizalabs (Magazine Luiza) – iOS Engineer Specialist <span>| Ago 2024 – Mai 2025</span></h3>
+        <ul>
+          <li>Otimização do fluxo de checkout do SuperApp, aumentando conversões.</li>
+          <li>Garantia de consistência e segurança em transações multi-squad.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Stone Co. <span>| Nov 2022 – Ago 2024</span></h3>
+        <ul>
+          <li>Android Tech Manager — liderou adoção de Kotlin Multiplatform.</li>
+          <li>iOS Tech Lead — gerenciou equipe de 3 devs iOS e removeu bloqueios.</li>
+          <li>Senior iOS Engineer — entregou features de crédito para milhares de usuários.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Banco Itaú – Senior iOS Engineer <span>| Jul 2022 – Out 2022</span></h3>
+        <ul>
+          <li>Implementação de design system no app Íon; criação de componentes reutilizáveis.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>C6 Bank – Senior iOS Engineer <span>| Jun 2021 – Jul 2022</span></h3>
+        <ul>
+          <li>Criação do PaymentsHub, acelerando entregas entre squads.</li>
+          <li>Mentoria de desenvolvedores júnior promovidos a níveis médios.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <ul>
+        <li>Universidade Federal de Sergipe — Bacharelado em Ciência da Computação (incompleto)</li>
+        <li>Udacity — Nanodegree em Programação</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certificações</h2>
+      <ul>
+        <li><a href="https://www.efset.org/cert/RLwJdp" target="_blank">EF SET English Certificate – C2 Proficient</a></li>
+        <li>Leadership Program – Stone Co.</li>
+        <li>Kanban Force Jedi</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <p><strong>Linguagens e Frameworks:</strong> Swift, Kotlin, RxSwift, MVP, MVVM, ViewCode</p>
+      <p><strong>Ferramentas:</strong> GitLab, Xcode, Jira, Fastlane, Bitrise</p>
+      <p><strong>Liderança e Metodologias:</strong> Mentoria técnica, Kanban, performance de squads</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vitor Costa</p>
+  </footer>
 </body>
 </html>
