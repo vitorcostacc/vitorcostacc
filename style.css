@@ -298,10 +298,20 @@ section {
 }
 
 .contact-line {
+  display: inline-block;
   margin: 0;
   font-size: clamp(1.3rem, 3.5vw, 1.9rem);
   font-weight: 700;
   letter-spacing: -0.02em;
+  background-image: linear-gradient(var(--text), var(--text));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.28s ease;
+}
+
+.contact-line:hover {
+  background-size: 100% 2px;
 }
 
 /* ---------- Footer ---------- */
