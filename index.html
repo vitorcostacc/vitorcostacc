@@ -32,6 +32,7 @@
             <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.48l-.01-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.32 9.32 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.71 1.03 1.62 1.03 2.74 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9l-.01 2.82c0 .26.18.59.69.48A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"></path>
           </svg>
         </a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">PT</button>
       </nav>
     </div>
   </header>
@@ -39,8 +40,8 @@
   <main>
     <!-- HERO -->
     <section class="hero container">
-      <h1>Vitor Costa <span class="sep">—</span> <span class="role">Staff iOS Engineer &amp; Engineering Leader</span></h1>
-      <p class="tagline">
+      <h1>Vitor Costa <span class="sep">—</span> <span class="role" data-i18n="heroRole">Staff iOS Engineer &amp; Engineering Leader</span></h1>
+      <p class="tagline" data-i18n="tagline">
         I build the invisible infrastructure that makes mobile apps feel
         effortless — and the teams that sustain it.
       </p>
@@ -48,7 +49,7 @@
 
     <!-- ABOUT -->
     <section class="about container">
-      <p>
+      <p data-i18n="about">
         I lead mobile teams and the engineers in them — and I still ship the
         code myself. With 15+ years writing code — the last 5+ in fintech — I've built products used by
         millions of people, and learned that I'm just as good at building teams
@@ -60,85 +61,85 @@
 
     <!-- WHAT I DO -->
     <section class="container">
-      <h2 class="section-title">What I do</h2>
+      <h2 class="section-title" data-i18n="whatIDo">What I do</h2>
       <div class="cards">
         <article class="card">
-          <h3>Technical Leadership</h3>
-          <p>Tech Lead, Engineering Manager, mentoring, cross-team alignment.</p>
+          <h3 data-i18n="card1Title">Technical Leadership</h3>
+          <p data-i18n="card1Desc">Tech Lead, Engineering Manager, mentoring, cross-team alignment.</p>
         </article>
         <article class="card">
-          <h3>Mobile Platform Engineering</h3>
-          <p>CI/CD, release automation, SDKs, performance at scale.</p>
+          <h3 data-i18n="card2Title">Mobile Platform Engineering</h3>
+          <p data-i18n="card2Desc">CI/CD, release automation, SDKs, performance at scale.</p>
         </article>
         <article class="card">
-          <h3>Problem Solving at Scale</h3>
-          <p>Fintech apps, millions of users, complex systems made simple.</p>
+          <h3 data-i18n="card3Title">Problem Solving at Scale</h3>
+          <p data-i18n="card3Desc">Fintech apps, millions of users, complex systems made simple.</p>
         </article>
       </div>
     </section>
 
     <!-- SELECTED EXPERIENCE -->
     <section class="container">
-      <h2 class="section-title">Selected experience</h2>
+      <h2 class="section-title" data-i18n="expTitle">Selected experience</h2>
       <ul class="experience">
         <li>
           <div class="exp-head">
             <span class="company">PicPay</span>
             <span class="position">Staff iOS Engineer</span>
           </div>
-          <p class="impact">Sole Staff Mobile on the Core Mobile team — fronting mobile-wide technical decisions and automating the App Store release pipeline for an app used by millions.</p>
+          <p class="impact" data-i18n="picpayImpact">Sole Staff Mobile on the Core Mobile team — fronting mobile-wide technical decisions and automating the App Store release pipeline for an app used by millions.</p>
         </li>
         <li>
           <div class="exp-head">
             <span class="company">Stone</span>
             <span class="position">Engineering Manager &amp; Tech Lead iOS</span>
           </div>
-          <p class="impact">Led mobile teams across iOS and Android; drove the Kotlin Multiplatform migration strategy.</p>
+          <p class="impact" data-i18n="stoneImpact">Led mobile teams across iOS and Android; drove the Kotlin Multiplatform migration strategy.</p>
         </li>
         <li>
           <div class="exp-head">
             <span class="company">C6 Bank</span>
             <span class="position">Senior iOS Engineer</span>
           </div>
-          <p class="impact">Built the PaymentsHub component adopted across multiple squads.</p>
+          <p class="impact" data-i18n="c6Impact">Built the PaymentsHub component adopted across multiple squads.</p>
         </li>
         <li>
           <div class="exp-head">
             <span class="company">Banco Itaú</span>
             <span class="position">Senior iOS Engineer</span>
           </div>
-          <p class="impact">Implemented the design system for the bank's investments app (íon).</p>
+          <p class="impact" data-i18n="itauImpact">Implemented the design system for the bank's investments app (íon).</p>
         </li>
         <li>
           <div class="exp-head">
             <span class="company">Luizalabs</span>
             <span class="position">iOS Specialist</span>
           </div>
-          <p class="impact">Owned the checkout flow of one of Brazil's largest e-commerce apps.</p>
+          <p class="impact" data-i18n="luizaImpact">Owned the checkout flow of one of Brazil's largest e-commerce apps.</p>
         </li>
       </ul>
 
       <details class="early-career">
-        <summary>Early Career (2008–2019)</summary>
+        <summary data-i18n="earlyCareer">Early Career (2008–2019)</summary>
         <p>Avonale · Getinfo · Teaser · Popcode · Lumen</p>
       </details>
     </section>
 
     <!-- SKILLS -->
     <section class="container">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title" data-i18n="skillsTitle">Skills</h2>
       <div class="skills">
         <div class="skill-group">
-          <h3>Leadership</h3>
+          <h3 data-i18n="skillLeadership">Leadership</h3>
           <ul>
-            <li>Engineering Management</li>
-            <li>Mentoring</li>
-            <li>Cross-team Alignment</li>
-            <li>Technical Direction</li>
+            <li data-i18n="skillEngMgmt">Engineering Management</li>
+            <li data-i18n="skillMentoring">Mentoring</li>
+            <li data-i18n="skillCrossTeam">Cross-team Alignment</li>
+            <li data-i18n="skillTechDir">Technical Direction</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Mobile</h3>
+          <h3 data-i18n="skillMobile">Mobile</h3>
           <ul>
             <li>Swift</li>
             <li>SwiftUI</li>
@@ -148,7 +149,7 @@
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Architecture</h3>
+          <h3 data-i18n="skillArch">Architecture</h3>
           <ul>
             <li>MVVM</li>
             <li>MVP+C</li>
@@ -161,13 +162,15 @@
 
     <!-- CONTACT -->
     <section class="contact container">
-      <h2 class="section-title">Contact</h2>
-      <a class="contact-line" href="mailto:me@vitorcosta.cc">Let's build something — or just talk.</a>
+      <h2 class="section-title" data-i18n="contactTitle">Contact</h2>
+      <a class="contact-line" href="mailto:me@vitorcosta.cc" data-i18n="contactLine">Let's build something — or just talk.</a>
     </section>
   </main>
 
   <footer class="container">
     <p>© 2026 Vitor Costa</p>
   </footer>
+
+  <script src="i18n.js"></script>
 </body>
 </html>
