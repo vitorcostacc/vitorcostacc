@@ -326,6 +326,25 @@ footer p {
   color: var(--muted);
 }
 
+/* ---------- Language toggle ---------- */
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 4px;
+  padding: 0 8px;
+  height: 28px;
+  font: 500 12px/1 'Inter', sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.lang-toggle:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 680px) {
   .cards,
